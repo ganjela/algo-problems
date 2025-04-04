@@ -4,10 +4,10 @@ def find_minimum_coins_for_change(n, coins):
         if n == 0:
             break
 
-        res = n // coins
+        res = n // coin
         if res != 0:
             change += res
-            n = n - coins * res
+            n = n - coin * res
 
     if n != 0:
         return -1
