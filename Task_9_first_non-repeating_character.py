@@ -1,4 +1,9 @@
-def find_first_unique_character(s: str) -> int:
+"""
+Using two sets to track unique and non-unique characters and return
+the index of the first character that appears only once. If no unique character
+exists, it returns -1.
+"""
+def find_first_unique_character(s):
     uniques = set()
     not_uniques = set()
     l = []

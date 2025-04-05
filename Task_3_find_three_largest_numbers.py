@@ -1,3 +1,8 @@
+"""
+We are tracking three largest numbers using list of length 3.
+If we encounter a number larger than the minimum of the largest
+three numbers, we remove the minimum and replace it with the new number.
+"""
 MINIMUM = float('-inf')
 def find_three_largest_numbers(numbers):
     largest_nums = [MINIMUM] * 3

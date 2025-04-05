@@ -1,5 +1,7 @@
 from Node import ListNode
-
+"""
+Kindergarten addition simulation
+"""
 def add_numbers(l1, l2):
     temp = ListNode(0, None)
     current = temp

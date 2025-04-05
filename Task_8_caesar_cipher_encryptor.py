@@ -1,3 +1,7 @@
+"""
+Each character in the string is shifted by the given key.
+The function wraps around when the end of the alphabet is exceeded.
+"""
 def caesar_cipher_encryptor(s, key):
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     encrypted_string = []

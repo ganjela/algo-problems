@@ -1,3 +1,10 @@
+"""
+Iterate through nums and when encountering x, save index and occurrence count.
+
+If occurrence value in query is greater return -1, which means x has not been encountered q times.
+else append index of q-th occurrence to the result.
+"""
+
 def find_occurrences(nums, queries, x):
     occurrence = {}
 

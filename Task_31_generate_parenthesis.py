@@ -1,3 +1,12 @@
+"""
+Base case for this recursion is when open and close counts are equal,
+in which case all parentheses are used, and we append permutation to the result.
+
+We add closed parentheses only when closed < opened, because
+if otherwise, we will get unmatched closed parentheses.
+"())))"
+"""
+
 def generate_parenthesis(n):
     result = []
     def generate(opened_count, closed_count, s):

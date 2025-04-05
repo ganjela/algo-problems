@@ -1,3 +1,10 @@
+"""
+O(n^2) solution.
+
+For each interval end, find closest greater or equal interval start in the right part of the intervals list,
+by iterating through the list.
+"""
+
 def find_closest_right_interval(intervals):
     result = []
     for i in range(len(intervals)):
@@ -6,6 +13,7 @@ def find_closest_right_interval(intervals):
 
 
 def get_right_interval(index, end, intervals):
+    """helper function to get right closest start index"""
     result = -1
     closest = float('inf')
     for i in range(len(intervals)):

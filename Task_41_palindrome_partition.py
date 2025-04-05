@@ -1,3 +1,10 @@
+"""
+If substring is palindrome, we add it to partitions list and when
+we find valid palindrome substring, we recursively process the
+remaining string.
+
+Base case is when index reaches the end.
+"""
 def partition(s):
 
     length = len(s)

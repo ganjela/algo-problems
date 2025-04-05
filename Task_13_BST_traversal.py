@@ -1,3 +1,8 @@
+"""
+Inorder - traverses the left subtree, then the root, and finally the right subtree.
+Preorder - traverses the root first, then the left subtree, and finally the right subtree.
+Postorder -traverses the left subtree, then the right subtree, and finally the root.
+"""
 def traverse_bst_inorder(root, traversed_values = []):
     if root:
         traverse_bst_inorder(root.left, traversed_values)

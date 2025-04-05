@@ -1,4 +1,8 @@
-def validate_subsequence(s: str, t: str) -> bool:
+"""
+A subsequence is derived by deleting some or no characters from `t` without changing
+the order of the remaining characters. We check this by iterating through `t`.
+"""
+def validate_subsequence(s, t):
     len_s = len(s)
     if len_s > len(t):
         return False

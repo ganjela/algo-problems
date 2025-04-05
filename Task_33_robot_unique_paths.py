@@ -1,3 +1,11 @@
+"""
+Robot has two choices for each move, either to go down or go right.
+
+So, we are using dp to store unique paths.
+
+Base case is 1.
+"""
+
 def calculate_unique_paths(m, n):
     current_row = [1] * n
     previous_row = [1] * n

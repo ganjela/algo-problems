@@ -1,3 +1,6 @@
+"""
+Minimum characters to replace is difference between characters count.
+"""
 def calculate_min_steps(s, t):
     count_s = [0] * 26
     count_t = [0] * 26

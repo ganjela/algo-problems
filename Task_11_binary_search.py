@@ -1,3 +1,6 @@
+"""
+Standard binary search algorithm using while loop.
+"""
 def binary_search(list, target):
     l =  0
     r = len(list) - 1

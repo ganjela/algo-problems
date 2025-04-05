@@ -1,3 +1,11 @@
+"""
+First, convert words list to set for O(1) look up.
+
+After, in solution dp is used where we have to choose between minimum result
+from choosing substring from i up to length of s and from skipping current character.
+
+Base case of dp is when index reaches end of the string and returns 0.
+"""
 def find_min_extra_chars(s, dictionary):
     words = set(dictionary)
     cache = {}

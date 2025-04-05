@@ -1,3 +1,6 @@
+"""
+Using DFS to determine the max depth of a binary tree.
+"""
 def max_depth(root):
     if root is None:
         return 0

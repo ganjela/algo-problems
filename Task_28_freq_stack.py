@@ -1,5 +1,12 @@
 from collections import defaultdict
 
+"""
+Frequency stack keeps track of current maximum frequency and frequency values for each element.
+
+Also, we have seperated each frequencies into different stacks. Which will ensure that elements 
+with same frequency are popped in order with time complexity O(1).
+"""
+
 class FreqStack:
     def __init__(self):
         self.stacks = defaultdict(list)

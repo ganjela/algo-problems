@@ -1,3 +1,11 @@
+"""
+When we encounter closing parenthesis, it means that the expression is finished and we need to evaluate it.
+
+Evaluating happens based on the most recent operator which we keep track in the stack.
+
+Also, we keep track values of a subexpression after encountering operator using the same stack. And after,
+only important thing that operators care for are, if subexpression has true or false value, based on the operator.
+"""
 def eval_bool_expression(expression):
     stack = []
     operators = ("&", "|", "!")

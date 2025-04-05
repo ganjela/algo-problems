@@ -1,3 +1,11 @@
+"""
+If operator is found, split the expression into sub-expressions and then
+recursively evaluate them. After this, Given results of sub-expressions are
+evaluated using operator which stands between them.
+
+Also, base case for the recursion is when we have single number in the expression,
+in which case we return list of that only number.
+"""
 def calculate_operations(expression):
     result = []
     for i in range(len(expression)):

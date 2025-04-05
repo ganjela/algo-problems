@@ -1,3 +1,7 @@
+"""
+This could be solved using recursion but more efficient way is to use dynamic programming,
+where instead of storing values in the array, we store the previous two values.
+"""
 def find_nth_fibonacci(n):
     if n == 0:
         return 0

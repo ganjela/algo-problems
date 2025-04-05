@@ -1,3 +1,12 @@
+"""
+Used sliding window approach for this solution.
+
+Track counts of a, b, c in the current window
+and move the end pointer,updating character counts.
+
+When all three characters are present, every substring ending at end and starting from start to end is valid.
+Add len(s) - end to the result, then shrink the window by moving start.
+"""
 def calculate_number_of_substrings(s):
     start = 0
     char_count = [0, 0, 0]

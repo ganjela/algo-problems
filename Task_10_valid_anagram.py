@@ -1,6 +1,9 @@
 from collections import defaultdict
 
-def is_anagram(s: str, t: str) -> bool:
+"""
+Anagram is valid if both strings have same characters with same counts.
+"""
+def is_anagram(s, t):
     sdict = defaultdict(int)
     tdict = defaultdict(int)
 

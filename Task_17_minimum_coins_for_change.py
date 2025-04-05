@@ -1,3 +1,8 @@
+"""
+Using greedy approach, We start from the biggest coins to get minimum
+number of coins for the change (assuming that coins are sorted).
+"""
+
 def find_minimum_coins_for_change(n, coins):
     change = 0
     for coin in coins[::-1]:

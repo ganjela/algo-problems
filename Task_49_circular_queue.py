@@ -1,5 +1,16 @@
-class CircularQueue:
+"""
+CircularQueue is implemented using list where each function runs in O(1) time.
 
+Only hard part of this problem was to come up with the idea of how to wrap around start and end
+pointers meaning, using the modulo operator:
+enQueue - self.end = (self.end + 1) % self.k
+deQueue - self.start = (self.start + 1) % self.k
+
+This lines make sure that when pointers reach to end of the list they wrap around. This avoids
+index out of range error and makes use of free space in the list.
+"""
+
+class CircularQueue:
     def __init__(self, k: int):
         self.queue = [None] * k
         self.k = k
